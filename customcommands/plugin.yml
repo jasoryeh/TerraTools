@@ -1,7 +1,0 @@
-main: tu.customcommands.Core
-version: 1.0
-name: Custom Commands
-
-commands:
-  command:
-    description: thingsgohere
