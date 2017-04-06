@@ -1,4 +1,4 @@
-# TerraUtilities
+# TerraTools | Custom Commands
 
 Custom Commands
 Changelog
