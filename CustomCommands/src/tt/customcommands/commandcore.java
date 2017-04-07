@@ -55,6 +55,10 @@ public class commandcore extends JavaPlugin{
 		  String WEBSITESITE = getConfig().getString("WEBSITE", "https://terramagnum.net");
 		  player.sendMessage(ChatColor.YELLOW + "Our website is here: " + WEBSITESITE);
 	  }
+	  if(label.equalsIgnoreCase("github")){
+		  String GITHUBSITE = getConfig().getString("GITHUB", "https://github.com/TerraMagnum/");
+		  player.sendMessage(ChatColor.AQUA + GITHUBSITE);
+	  }
     return true;
   }
 }
