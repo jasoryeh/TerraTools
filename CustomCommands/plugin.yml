@@ -1,0 +1,32 @@
+name: TCC
+version: 0.0.1-DEV1
+description: TCC
+author: Input + Shadow
+website: https://jasoryeh.tk
+main: tt.customcommands.commandcore
+prefix: TCC
+
+commands:
+ test:
+  description: Tests TCC.
+  usage: /test to test.
+  permission:
+   tc.test
+ idek:
+  description: Info for the server.
+  usage: /info (what info?) to get info.
+  permission:
+   tc.info
+
+permissions:
+ tc.*:
+  description: Gives access to all TCC commands.
+  children:
+   tc.test: true
+   tc.info: true
+ tc.test:
+  description: Tests the plugin.
+  default: false
+ tc.info:
+  description: Gets info.
+  default: true
