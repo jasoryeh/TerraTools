@@ -2,7 +2,7 @@ name: TCC
 version: 0.0.1-DEV1
 description: TCC
 author: Input + Shadow
-website: https://jasoryeh.tk
+website: https://github.com/terramagnum
 main: tt.customcommands.commandcore
 prefix: TCC
 

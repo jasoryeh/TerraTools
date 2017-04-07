@@ -31,17 +31,21 @@ public class commandcore extends JavaPlugin{
 	  }
 	  if(label != null && label.equalsIgnoreCase("idek")){
 		  Player p = player;
-		  if(args[0] != null && args[0].equalsIgnoreCase("discord")){
-			  String DISCORDSITE = getConfig().getString("DISCORD", "https://discord.gg/G9tvJSu");
-			  p.sendMessage(ChatColor.BLUE + "Join our discord @ " + DISCORDSITE);			  
-		  }else if(args[0] != null && args[0].equalsIgnoreCase("website")){
-			  String WEBSITESITE = getConfig().getString("WEBSITE", "https://terramagnum.net");
-			  p.sendMessage(ChatColor.YELLOW + "Our website is here: " + WEBSITESITE);
-		  }else if(args[0] == null){
+		  if(args.length == 0){
 			  System.out.println("LOL");
-			  p.sendMessage("Error");
-		  }else{
-			  System.out.println("P");
+			  p.sendMessage(ChatColor.RED + "Error - use /info discord, or website.");
+		  }else if(args.length == 1){
+			  if(args[0] != null && args[0].equalsIgnoreCase("discord")){
+				  String DISCORDSITE = getConfig().getString("DISCORD", "https://discord.gg/G9tvJSu");
+				  p.sendMessage(ChatColor.BLUE + "Join our discord @ " + DISCORDSITE);			  
+			  }else if(args[0] != null && args[0].equalsIgnoreCase("website")){
+				  String WEBSITESITE = getConfig().getString("WEBSITE", "https://terramagnum.net");
+				  p.sendMessage(ChatColor.YELLOW + "Our website is here: " + WEBSITESITE);
+			  }else if(args[0] == null){
+				  getLogger().info("null string for args[0]");
+			  }else{
+				  getLogger().info(":P");
+			  } 
 		  }
 	  }
     return true;
