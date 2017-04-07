@@ -27,6 +27,11 @@ commands:
   usage: /website
   permission:
    tc.info.website
+ github:
+  description: Github site.
+  usage: /github
+  permission:
+   tc.info.github
 
 permissions:
  tc.*:
@@ -47,4 +52,7 @@ permissions:
   default: true
  tc.info.website:
   description: Permission for /website
+  default: true
+ tc.info.github:
+  description: Permission for /github
   default: true
