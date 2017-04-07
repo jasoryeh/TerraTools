@@ -17,6 +17,16 @@ commands:
   usage: /info (what info?) to get info.
   permission:
    tc.info
+ discord:
+  description: Discord information for TerraMagnum
+  usage: /discord
+  permission:
+   tc.info.discord
+ website:
+  description: Website information for TerraMagnum
+  usage: /website
+  permission:
+   tc.info.website
 
 permissions:
  tc.*:
@@ -24,9 +34,17 @@ permissions:
   children:
    tc.test: true
    tc.info: true
+   tc.info.discord: true
+   tc.info.website: true
  tc.test:
   description: Tests the plugin.
   default: false
  tc.info:
   description: Gets info.
+  default: true
+ tc.info.discord:
+  description: Permission for /discord
+  default: true
+ tc.info.website:
+  description: Permission for /website
   default: true
