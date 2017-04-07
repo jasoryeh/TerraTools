@@ -29,7 +29,7 @@ public class commandcore extends JavaPlugin{
 			  player.sendMessage(ChatColor.GREEN + "Config reload done.");
 		  }
 	  }
-	  if(label != null && label.equalsIgnoreCase("idek")){
+	  if(label != null && label.equalsIgnoreCase("info")){
 		  if(args.length == 0){
 			  System.out.println("LOL");
 			  player.sendMessage(ChatColor.RED + "Error - use /info discord, or website.");
