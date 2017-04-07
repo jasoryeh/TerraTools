@@ -1,9 +1,9 @@
-# TerraTools | Custom Commands
-
+# TerraTools - TerraMagnum Network's Custom Plugins
+Work in progress
 Custom Commands
 Changelog
 
-Version 0.0.1DEV-1
+Version 0.0.1-DEV-1
 - Initial release
 - Added /discord command
 - Added /github command
