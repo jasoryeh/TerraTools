@@ -1,0 +1,81 @@
+name: TCC
+version: 0.0.1-DEV1
+description: TCC
+author: Input + Shadow
+website: https://github.com/terramagnum
+main: tt.customcommands.commandcore
+prefix: TCC
+
+commands:
+ tc:
+  description: Tests TerraCore
+  usage: /tc <args>
+  permission:
+   tc.tc
+ test:
+  description: Tests TCC.
+  usage: /test to test.
+  permission:
+   tc.test
+ info:
+  description: Info for the server.
+  usage: /info (what info?) to get info.
+  permission:
+   tc.info
+ discord:
+  description: Discord information for TerraMagnum
+  usage: /discord
+  permission:
+   tc.info.discord
+ website:
+  description: Website information for TerraMagnum
+  usage: /website
+  permission:
+   tc.info.website
+ github:
+  description: Github site.
+  usage: /github
+  permission:
+   tc.info.github
+ ss:
+  description: Freeze.
+  usage: /ss
+  permission:
+   tc.freeze
+ freeze:
+  description: Freeze.
+  usage: /freeze
+  permission:
+   tc.freeze
+
+permissions:
+ tc.*:
+  description: Gives access to all TCC commands.
+  children:
+   tc.test: true
+   tc.info: true
+   tc.info.discord: true
+   tc.info.website: true
+   tc.freeze: true
+   tc.ic: true
+ tc.tc:
+  description: TC
+  default: false
+ tc.test:
+  description: Tests the plugin.
+  default: false
+ tc.info:
+  description: Gets info.
+  default: true
+ tc.info.discord:
+  description: Permission for /discord
+  default: true
+ tc.info.website:
+  description: Permission for /website
+  default: true
+ tc.info.github:
+  description: Permission for /github
+  default: true
+ tc.freeze:
+  description: Permission to /freeze or /ss people
+  default: true
